@@ -10,9 +10,9 @@ public class loginController {
     @PostMapping("/login")
     public String processLogin(@RequestParam String email,
                                @RequestParam String password) {
-        // Check for admin credentials
+        // Simple credential check
         if ("admin".equals(email) && "admin".equals(password)) {
-            return "index";
+            return "redirect:/index";
         }
         return "redirect:/login?error=true";
     }
