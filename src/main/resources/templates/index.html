@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Home</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid px-3">
+        <a class="navbar-brand fs-3" href="#">Delicious Recipes</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active fs-5" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-5" href="#">Recipes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-5" href="#">Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-5" href="#">About</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<div class="container-fluid p-0 position-relative">
+    <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836"
+             class="w-100 object-fit-cover"
+             style="height: 70vh; filter: brightness(0.7);"
+             alt="Featured Recipe">
+        <div class="position-absolute top-50 start-50 translate-middle text-center text-white w-100 px-3">
+            <h1 class="display-3 fw-bold mb-4">Welcome to Our Recipe Collection</h1>
+            <p class="lead fs-3 mb-4">Discover delicious recipes from around the world</p>
+            <a href="#featured" class="btn btn-light btn-lg px-5 py-3 fs-5">Explore Recipes</a>
+        </div>
+    </div>
+</div>
+
+<!-- Featured Recipes Section -->
+<section id="featured" class="py-5">
+    <div class="container px-4">
+        <h2 class="text-center display-4 mb-5">Featured Recipes</h2>
+        <div class="row g-4">
+            <!-- Recipe Card 1 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141"
+                         class="card-img-top object-fit-cover"
+                         style="height: 250px;"
+                         alt="Italian Pasta">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fs-4">Italian Pasta</h5>
+                        <p class="card-text flex-grow-1">A classic Italian pasta dish with rich tomato sauce and fresh herbs.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="badge bg-success fs-6 px-3 py-2">30 min</span>
+                            <a href="#" class="btn btn-primary px-4">View Recipe</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recipe Card 2 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19"
+                         class="card-img-top object-fit-cover"
+                         style="height: 250px;"
+                         alt="Asian Stir-Fry">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fs-4">Asian Stir-Fry</h5>
+                        <p class="card-text flex-grow-1">Quick and healthy vegetable stir-fry with savory sauce.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="badge bg-success fs-6 px-3 py-2">20 min</span>
+                            <a href="#" class="btn btn-primary px-4">View Recipe</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recipe Card 3 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b"
+                         class="card-img-top object-fit-cover"
+                         style="height: 250px;"
+                         alt="Mexican Tacos">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fs-4">Mexican Tacos</h5>
+                        <p class="card-text flex-grow-1">Authentic Mexican tacos with fresh salsa and guacamole.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="badge bg-success fs-6 px-3 py-2">25 min</span>
+                            <a href="#" class="btn btn-primary px-4">View Recipe</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Newsletter Section -->
+<section class="bg-light py-5">
+    <div class="container px-4">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6 text-center">
+                <h3 class="display-6 mb-3">Subscribe to Our Newsletter</h3>
+                <p class="text-muted fs-5 mb-4">Get weekly recipe updates and cooking tips!</p>
+                <form class="row g-3 justify-content-center">
+                    <div class="col-12 col-sm-8">
+                        <input type="email" class="form-control form-control-lg" placeholder="Enter your email">
+                    </div>
+                    <div class="col-12 col-sm-auto">
+                        <button type="submit" class="btn btn-primary btn-lg w-100">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+        <p class="mb-0 fs-5">© 2025 Delicious Recipes. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
