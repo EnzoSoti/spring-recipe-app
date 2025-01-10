@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Categories</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .category-card img {
+            object-fit: cover;
+            height: 200px;
+        }
+        .category-card:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid px-3">
+        <a class="navbar-brand fs-3" href="/">Delicious Recipes</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link fs-5" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-5" href="/recipes">Recipes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active fs-5" href="/categories">Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-5" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-5" href="/logout">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Category Header -->
+<div class="container py-5">
+    <h1 class="text-center mb-5">Recipe Categories</h1>
+
+    <!-- Search Bar -->
+    <div class="row justify-content-center mb-5">
+        <div class="col-md-6">
+            <input type="search" class="form-control form-control-lg" placeholder="Search categories...">
+        </div>
+    </div>
+
+    <!-- Category Grid -->
+    <div class="row g-4">
+        <!-- Italian Category -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card category-card h-100 shadow-sm">
+                <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141" class="card-img-top" alt="Italian Cuisine">
+                <div class="card-body">
+                    <h3 class="card-title">Italian</h3>
+                    <p class="card-text">Discover authentic Italian recipes, from pasta to pizza and everything in between.</p>
+                    <p class="text-muted"><small>25 recipes</small></p>
+                </div>
+                <div class="card-footer bg-white">
+                    <a href="#" class="btn btn-primary w-100">View Recipes</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Asian Category -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card category-card h-100 shadow-sm">
+                <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19" class="card-img-top" alt="Asian Cuisine">
+                <div class="card-body">
+                    <h3 class="card-title">Asian</h3>
+                    <p class="card-text">Explore delicious Asian recipes from stir-fries to sushi and noodle dishes.</p>
+                    <p class="text-muted"><small>30 recipes</small></p>
+                </div>
+                <div class="card-footer bg-white">
+                    <a href="#" class="btn btn-primary w-100">View Recipes</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mexican Category -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card category-card h-100 shadow-sm">
+                <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b" class="card-img-top" alt="Mexican Cuisine">
+                <div class="card-body">
+                    <h3 class="card-title">Mexican</h3>
+                    <p class="card-text">Spice up your kitchen with authentic Mexican tacos, enchiladas, and more.</p>
+                    <p class="text-muted"><small>20 recipes</small></p>
+                </div>
+                <div class="card-footer bg-white">
+                    <a href="#" class="btn btn-primary w-100">View Recipes</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vegetarian Category -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card category-card h-100 shadow-sm">
+                <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999" class="card-img-top" alt="Vegetarian Cuisine">
+                <div class="card-body">
+                    <h3 class="card-title">Vegetarian</h3>
+                    <p class="card-text">Healthy and delicious vegetarian recipes for every occasion.</p>
+                    <p class="text-muted"><small>15 recipes</small></p>
+                </div>
+                <div class="card-footer bg-white">
+                    <a href="#" class="btn btn-primary w-100">View Recipes</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Desserts Category -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card category-card h-100 shadow-sm">
+                <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777" class="card-img-top" alt="Desserts">
+                <div class="card-body">
+                    <h3 class="card-title">Desserts</h3>
+                    <p class="card-text">Sweet treats and delightful desserts for every sweet tooth.</p>
+                    <p class="text-muted"><small>18 recipes</small></p>
+                </div>
+                <div class="card-footer bg-white">
+                    <a href="#" class="btn btn-primary w-100">View Recipes</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Meals Category -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card category-card h-100 shadow-sm">
+                <img src="https://images.unsplash.com/photo-1495521821757-a1efb6729352" class="card-img-top" alt="Quick Meals">
+                <div class="card-body">
+                    <h3 class="card-title">Quick Meals</h3>
+                    <p class="card-text">Fast and easy recipes ready in 30 minutes or less.</p>
+                    <p class="text-muted"><small>22 recipes</small></p>
+                </div>
+                <div class="card-footer bg-white">
+                    <a href="#" class="btn btn-primary w-100">View Recipes</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-4 mt-5">
+    <div class="container text-center">
+        <p class="mb-0 fs-5">© 2025 Delicious Recipes. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
